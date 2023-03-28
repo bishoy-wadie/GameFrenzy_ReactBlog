@@ -1,0 +1,35 @@
+{
+  "users": [
+    {
+      "email": "bishoy@gmail.com",
+      "password": "$2a$10$d3kmiGEPjRIF0Rl84NWWauRm7mGOxquXfmN44L8OgsKQW8xP5URva",
+      "firstName": "bishoy",
+      "lastName": "Osama",
+      "age": 16,
+      "id": 1
+    },
+    {
+      "email": "Youssef@gmail.com",
+      "password": "$2a$10$kWW8Uzd0golwRlrrr7AdquaNUdtEQS9j6MoqN7vCLJEVEx.OyFG9W",
+      "firstName": "Yousesef",
+      "lastName": "Saeed",
+      "age": 22,
+      "id": 2
+    },
+    {
+      "email": "rania@gmail.com",
+      "password": "$2a$10$z7pvN8XYtC//76f6UgEVY.wAzt6CEsiksSsl0632t4ZZ3hdSsOcwm",
+      "firstName": "rania",
+      "lastName": "atef",
+      "age": 25,
+      "id": 3
+    }
+  ],
+  "posts": [
+    {
+      "title": "post title",
+      "content": "lorem ipsum dasd sds dasd sads dsdas dhbshd sad sdhsdsda dsadsdas dsdasdsadasds sdsdsad sfdfbhjfb jdsbosgudsbmncx,bfab,cxbc cjbcjbjbclsblasbacvblvksbciw",
+      "img": ""
+    }
+  ]
+}
