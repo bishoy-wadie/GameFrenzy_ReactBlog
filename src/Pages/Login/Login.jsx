@@ -70,10 +70,14 @@ function Login() {
 
       if (response.accessToken) {
         localStorage.setItem("access_token", response.accessToken);
+        localStorage.setItem("user_data", JSON.stringify(response.user));
         notify("Login Successfully", "success");
         setTimeout(() => {
           navigate("/");
         }, 3000);
+      } else {
+        localStorage.removeItem("access_token");
+        localStorage.removeItem("user_data");
       }
     } catch (error) {
       let errors = [];

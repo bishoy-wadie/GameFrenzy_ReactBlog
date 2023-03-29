@@ -5,6 +5,12 @@ import Post from "../../Components/Home/Post";
 import Slider from "../../Components/Home/Slider";
 
 function HomePage() {
+  let user = "";
+  if (localStorage.getItem("user_data") != null) {
+    user = JSON.parse(localStorage.getItem("user_data"));
+    console.log(user.firstName);
+  }
+
   return (
     <>
       <div className="sticky top-0 z-50">
@@ -16,7 +22,7 @@ function HomePage() {
       <Post />
       <Post />
       <Post />
-      <AddButton />
+      {user.firstName ? <AddButton /> : ""}
       <Footer />
     </>
   );

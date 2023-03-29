@@ -119,10 +119,14 @@ function SignUp() {
 
       if (response.accessToken) {
         localStorage.setItem("access_token", response.accessToken);
+        localStorage.setItem("user_data", JSON.stringify(response.user));
         notify("Your account Created Successfully", "success");
         setTimeout(() => {
           navigate("/");
         }, 3000);
+      } else {
+        localStorage.removeItem("access_token");
+        localStorage.removeItem("user_data");
       }
     } catch (error) {
       let errors = [];
