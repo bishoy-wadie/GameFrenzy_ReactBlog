@@ -1,4 +1,4 @@
-import AddButton from "../../Components/Home/AddButton";
+import AddNewPost from "../../Components/Home/AddNewPost";
 import Footer from "../../Components/Home/Footer";
 import NavBar from "../../Components/Home/NavBar";
 import Post from "../../Components/Home/Post";
@@ -22,7 +22,7 @@ function HomePage() {
       <Post />
       <Post />
       <Post />
-      {user.firstName ? <AddButton /> : ""}
+      {user.firstName ? <AddNewPost /> : ""}
       <Footer />
     </>
   );
