@@ -10,25 +10,32 @@ import {
   Routes,
 } from "react-router-dom";
 import SignUp from "./Pages/SignUp/SignUp";
-import UserProfile from "./Pages/User/UserProfile";
+import UserProfile from "./Pages/User/LoggedUserProfile";
+import PostContext from "./context/PostContext";
+import PageNotFound from "./Pages/404Page";
+import LoggedUserProfile from "./Pages/User/LoggedUserProfile";
 
 function App() {
-  const [count, setCount] = useState(0);
+  const [listOfPosts, setListOfPosts] = useState([]);
 
   const router = createBrowserRouter(
     createRoutesFromElements(
       <>
         <Route path="/" element={<HomePage />} />
-        <Route path="/profile" element={<UserProfile />} />
+        <Route path="/profile" element={<LoggedUserProfile />} />
+        <Route path="/:userid" element={<UserProfile />} />
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<SignUp />} />
+        <Route path="*" element={<PageNotFound />} />
       </>
     )
   );
 
   return (
     <>
-      <RouterProvider router={router} />
+      <PostContext.Provider value={{ listOfPosts, setListOfPosts }}>
+        <RouterProvider router={router} />
+      </PostContext.Provider>
     </>
   );
 }

@@ -23,13 +23,59 @@
       "lastName": "atef",
       "age": 25,
       "id": 3
+    },
+    {
+      "email": "mary@gmail.com",
+      "password": "$2a$10$fJFaogOV8fPZj.DSz6dlCuR1BeogdGOw0maTIgbboaY6TFGLCNMr.",
+      "firstName": "mary",
+      "lastName": "osama",
+      "age": 16,
+      "id": 4
+    },
+    {
+      "email": "Youssef1@gmail.com",
+      "password": "$2a$10$l.dnyD/r3M5ciF/OC3rS7ekCmjrtY5YjhL/6gd/ykL2zk4lx8mabu",
+      "firstName": "Yousssef",
+      "lastName": "Saeed",
+      "age": 23,
+      "id": 5
+    },
+    {
+      "email": "Mayar@gmail.com",
+      "password": "$2a$10$loq4IRIptZymFuaTPk3PDeMFWk5fE8qEuyCHMTi9flLsLIlij4N9e",
+      "firstName": "Mayar",
+      "lastName": "Mohamed",
+      "age": 24,
+      "id": 6
     }
   ],
   "posts": [
     {
-      "title": "post title",
-      "content": "lorem ipsum dasd sds dasd sads dsdas dhbshd sad sdhsdsda dsadsdas dsdasdsadasds sdsdsad sfdfbhjfb jdsbosgudsbmncx,bfab,cxbc cjbcjbjbclsblasbacvblvksbciw",
-      "img": ""
+      "postTitle": "League of Legends3",
+      "postContent": "League of Legends (LoL), commonly referred to as League, is a 2009 multiplayer online battle arena video game developed and published by Riot Games.",
+      "time": "10:32 AM",
+      "newDate": "4/1/2023",
+      "user_data": "{\"email\":\"bishoy@gmail.com\",\"firstName\":\"bishoy\",\"lastName\":\"Osama\",\"age\":16,\"id\":1}",
+      "postImg": "uploads/7cmijl9i.jpg",
+      "id": 6
+    },
+    {
+      "postTitle": "Finding Nemo Game",
+      "postContent": "Finding Nemo is a 2003 action-adventure video game based on the film of the same name by Disney and Pixar. ",
+      "time": "10:35 AM",
+      "newDate": "4/1/2023",
+      "user_data": "{\"email\":\"rania@gmail.com\",\"firstName\":\"rania\",\"lastName\":\"atef\",\"age\":25,\"id\":3}",
+      "postImg": "uploads/39trbxkp.jpg",
+      "id": 8
+    },
+    {
+      "postTitle": "Ludo King",
+      "postContent": "A record breaking casual game in the history of mobile gaming · Voice Chat, 6 Player Ludo, Quick Ludo mode, Tournaments, and many other exciting features!",
+      "time": "09:41 PM",
+      "newDate": "4/1/2023",
+      "user_data": "{\"email\":\"Mayar@gmail.com\",\"firstName\":\"Mayar\",\"lastName\":\"Mohamed\",\"age\":24,\"id\":6}",
+      "postImg": "uploads/s8zoa236.png",
+      "id": 9
     }
   ]
 }

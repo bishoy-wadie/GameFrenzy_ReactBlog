@@ -15,19 +15,20 @@ function NavBar() {
 
   const logOut = () => {
     localStorage.removeItem("user_data");
+    localStorage.removeItem("access_token");
     setUser("");
     window.location.href = "/";
   };
 
   return (
     <>
-      <div className="navbar bg-base-100">
-        <div className="flex-1">
-          <Link to="/" className="btn btn-ghost normal-case text-xl">
+      <div className="navbar bg-base-100 bg-opacity-70">
+        <div className="flex-1 ">
+          <Link to="/" className="btn btn-ghost normal-case text-white text-xl">
             GameFrenzy
           </Link>
         </div>
-        <label className="swap swap-rotate">
+        {/* <label className="swap swap-rotate">
           <input type="checkbox" />
 
           <svg
@@ -45,7 +46,7 @@ function NavBar() {
           >
             <path d="M21.64,13a1,1,0,0,0-1.05-.14,8.05,8.05,0,0,1-3.37.73A8.15,8.15,0,0,1,9.08,5.49a8.59,8.59,0,0,1,.25-2A1,1,0,0,0,8,2.36,10.14,10.14,0,1,0,22,14.05,1,1,0,0,0,21.64,13Zm-9.5,6.69A8.14,8.14,0,0,1,7.08,5.22v.27A10.15,10.15,0,0,0,17.22,15.63a9.79,9.79,0,0,0,2.1-.22A8.11,8.11,0,0,1,12.14,19.73Z" />
           </svg>
-        </label>
+        </label> */}
         <div className="flex-none gap-2">
           {/* <div className="form-control justify-center">
             <input
@@ -85,7 +86,7 @@ function NavBar() {
             ) : (
               <Link
                 to="/login"
-                className="flex flex-row btn btn-ghost normal-case text-l"
+                className="flex flex-row btn rounded-full normal-case text-l bg-gradient-to-r from-cyan-500 to-blue-500 text-white "
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
