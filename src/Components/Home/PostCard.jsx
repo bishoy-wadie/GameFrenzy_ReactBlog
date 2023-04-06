@@ -78,7 +78,7 @@ function PostCard(props) {
         obj = JSON.parse(post.user_data);
         console.log(post.id);
         return (
-          <div className="Posts ">
+          <div className="Posts " key={post.id}>
             <div className="flex flex-col m-10 items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700 relative">
               <img
                 className="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-l-lg"
